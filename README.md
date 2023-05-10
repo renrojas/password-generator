@@ -2,7 +2,7 @@
 
 ## Description
 
-The creation of this project is to randomly generate a secure password that meets certain criteria. Passwords can be the only barrier to sensitive information, which means they have to provide greater security than passwords made up of known words which makes it easy for anyone to guess. This password generator will create a quick password based on user preferences in terms of length of password, and whether or not to include lowercase, uppercase, numeric, and/or special characters.
+The creation of this project is to randomly generate a secure password that meets certain criteria. Passwords can be the only barrier to sensitive information, which means they have to provide greater security than passwords made up of known words that can make it easy for anyone to guess. This password generator will create a quick password based on user preferences in terms of length of password, and whether or not to include lowercase, uppercase, numeric, and/or special characters.
 
 ## Installation
 

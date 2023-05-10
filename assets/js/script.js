@@ -1,13 +1,13 @@
 // Assignment code 
 var generateBtn = document.querySelector("#generate");
 
-//Function length of password
+//Function for user to select length of password
 function generatePassword() {
   var generatedPassword = "";
   var passwordLength = 0;
-  // loop to prompt and validate: while loop
+  // while loop to prompt and validate
   while(passwordLength <8 || passwordLength > 128) {
-    passwordLength = prompt ("Please set the length between 8 to 128 characters, inclusive")
+    passwordLength = prompt ("Please set the length between 8 to 128 characters.")
     if (passwordLength >= 8 && passwordLength <=128) {
     } else if(passwordLength!==null){
     alert("Please select a valid number equal or greater than 8 and less than or equal to 128")
@@ -30,7 +30,7 @@ function generatePassword() {
     numbers = window.confirm("Would you like to include numbers?");
     specialChars = window.confirm("Would you like to include special characters?");
     
-    //Validate that at least one type of characters has been selected
+    //Validate that at least one type of characters has been selected/send following prompt when user does not choose a category.
     if ((lowerCase||upperCase||numbers||specialChars)== false) {
       alert("Please select atleast one of the categories.")
     }}
@@ -56,7 +56,7 @@ var userString = ""
     userString = userString + special
   }
 
-//for loop to randomnize string based on password length
+//for loop to randomnize string based on password length and user criteria
 for (var i = 0; i<passwordLength; i++){
   var random = Math.floor(Math.random() * userString.length);
 
@@ -68,7 +68,7 @@ for (var i = 0; i<passwordLength; i++){
 function writePassword() {
   var password = generatePassword();
 
-  //Shows password
+  //Shows password for user
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
