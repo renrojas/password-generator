@@ -8,7 +8,7 @@ The creation of this project is to randomly generate a secure password that meet
 
 Project as a repository on GitHub: https://github.com/renrojas/password-generator
 
-Project deployed on GitHub Pages: 
+Project deployed on GitHub Pages: https://renrojas.github.io/password-generator/ 
 
 ## Usage
 
