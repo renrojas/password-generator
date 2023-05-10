@@ -39,7 +39,7 @@ function generatePassword() {
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var numberOptions = "1234567890"
-var special = "~!@#$%^&*()_+-={}|[]\:;'<>,./?'"
+var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 //Adds characters based on user preferences
 var userString = ""
@@ -73,21 +73,4 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
-//Activates when user clicks on button
 generateBtn.addEventListener("click", writePassword);
-
-
-/*
-when user clicks button
-1. request length for password, constraints 8 to 128 inclusive
-  a) Request the data (done)
-  b) validate that is between 8 and 128 (done)
-2. ask for what type of characters to include
-  a) ask if lowercase? Yes, NO (done)
-  b) ask if uppercase? Yes, No (done)
-  c) ask for numbers? Yes, No (done)
-  d) ask for special chars? Yes, No (done)
-3. Validate that at least one type has been selected
-4. Generate the password
-5. Show the password */
